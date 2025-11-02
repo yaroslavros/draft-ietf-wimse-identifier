@@ -2,22 +2,21 @@
 
 # Workload Identifier
 
-This is the working area for the individual Internet-Draft, "Workload Identifier".
+This is the working area for the IETF [WIMSE Working Group](https://datatracker.ietf.org/group/wimse/documents/) Internet-Draft, "Workload Identifier".
 
-* [Editor's Copy](https://yaroslavros.github.io/wimse-identifier/#go.draft-rosomakho-wimse-identifier.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-rosomakho-wimse-identifier)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-rosomakho-wimse-identifier)
-* [Compare Editor's Copy to Individual Draft](https://yaroslavros.github.io/wimse-identifier/#go.draft-rosomakho-wimse-identifier.diff)
+* [Editor's Copy](https://ietf-wg-wimse.github.io/draft-ietf-wimse-identifier/#go.draft-ietf-wimse-identifier.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-wimse-identifier)
+* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-wimse-identifier)
+* [Compare Editor's Copy to Working Group Draft](https://ietf-wg-wimse.github.io/draft-ietf-wimse-identifier/#go.draft-ietf-wimse-identifier.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/yaroslavros/wimse-identifier/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/yaroslavros/draft-ietf-wimse-identifier/blob/main/CONTRIBUTING.md).
 
-Contributions can be made by creating pull requests.
-The GitHub interface supports creating pull requests using the Edit (✏) button.
-
+The contributing file also has tips on how to make contributions, if you
+don't already know how to do that.
 
 ## Command Line Usage
 

@@ -3,7 +3,7 @@ title: "Workload Identifier"
 abbrev: "Workload Identifier"
 category: std
 
-docname: draft-rosomakho-wimse-identifier-latest
+docname: draft-ietf-wimse-identifier-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -19,8 +19,8 @@ venue:
   type: ""
   mail: "wimse@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/wimse/"
-  github: "yaroslavros/wimse-identifier"
-  latest: "https://yaroslavros.github.io/wimse-identifier/draft-rosomakho-wimse-identifier.html"
+  github: "ietf-wg-wimse/draft-ietf-wimse-identifier"
+  latest: "https://ietf-wg-wimse.github.io/draft-ietf-wimse-identifier/draft-ietf-wimse-identifier.html"
 
 author:
  -
