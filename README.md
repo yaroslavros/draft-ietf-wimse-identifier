@@ -4,10 +4,10 @@
 
 This is the working area for the IETF [WIMSE Working Group](https://datatracker.ietf.org/group/wimse/documents/) Internet-Draft, "Workload Identifier".
 
-* [Editor's Copy](https://yaroslavros.github.io/draft-ietf-wimse-identifier/#go.draft-ietf-wimse-identifier.html)
+* [Editor's Copy](https://ietf-wg-wimse.github.io/draft-ietf-wimse-identifier/#go.draft-ietf-wimse-identifier.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-wimse-identifier)
 * [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-wimse-identifier)
-* [Compare Editor's Copy to Working Group Draft](https://yaroslavros.github.io/draft-ietf-wimse-identifier/#go.draft-ietf-wimse-identifier.diff)
+* [Compare Editor's Copy to Working Group Draft](https://ietf-wg-wimse.github.io/draft-ietf-wimse-identifier/#go.draft-ietf-wimse-identifier.diff)
 
 
 ## Contributing
