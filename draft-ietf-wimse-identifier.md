@@ -131,15 +131,13 @@ spiffe://prod.trust.domain/ns/prod-01/sa/foo-service
 * Specific instance of application role
 
 ~~~
-spiffe://prod.trust.domain/ns/prod-01/sa/foo-service/iid-
-      1f814646-87b5-4e26-bb55-1d13caccdd8d
+spiffe://prod.trust.domain/ns/prod-01/sa/foo-service/iid-1f814646-87b5-4e26-bb55-1d13caccdd8d
 ~~~
 
 * Specific code for an application role
 
 ~~~
-spiffe://prod.trust.domaain/foo-servce#@sha256:
-      c4dbb1a06030e142cb0ed4be61421967618289a19c0c7760bdd745ac67779ca7
+spiffe://prod.trust.domain/foo-service/sha256/c4dbb1a06030e142cb0ed4be61421967618289a19c0c7760bdd745ac67779ca7
 ~~~
 
 Other concepts may be defined within the trust domain depending on what is important in the system and what information is available when the identity is issued. A trust domain should define the scheme specific portion of the URI to meet their auditing and authorization needs.
