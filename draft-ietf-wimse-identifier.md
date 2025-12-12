@@ -165,6 +165,19 @@ spiffe://dev.example.com/ns/default/database/backend
 spiffe://prod.example.com/ns/default/database/backend
 ~~~
 
+## Workload Identifier Scope
+
+A Workload Identifier Scope is a specification of a namespace under which a Workload Identifier is meaningful for a given use case. A scope consists of the URI scheme and trust domain components of a Workload Identifier, omitting the path component.
+
+Workload Identifier Scopes serve as hints about the set of identifiers an entity may present in a particular protocol instance or usage context without revealing specific identifier.
+
+Examples of Workload Identifier Scopes:
+
+~~~
+spiffe://prod.trust.domain
+wimse://trust.corp.example.com
+~~~
+
 # Usage in Credentials and Tokens
 
 Workload Identifiers are designed to be embedded in cryptographic credentials and security tokens that are used to assert the identity of workloads during authentication, authorisation, and auditing. This section describes how such identifiers may be represented in commonly used formats.
