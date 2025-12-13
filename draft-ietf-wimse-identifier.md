@@ -103,12 +103,20 @@ The identifier is designed to be stable and suitable for inclusion in digital cr
 
 ## URI Requirements
 
-A Workload Identifier MUST be an absolute URI, as defined in {{Section 4.3 of URI}}. In addition the URI MUST include an authority that identifies the trust domain within which the identifier is scoped. The scheme and scheme specific part are not defined by this specification. The URI format allows different schemes (e.g., `spiffe` as defined in {{SPIFFE-ID}}, `wimse`) depending on deployment requirements.  Example identifiers:
+A Workload Identifier MUST be an absolute URI, as defined in {{Section 4.3 of URI}}. In addition the URI MUST include a non-empty authority component that identifies the trust domain within which the identifier is scoped.
+
+The scheme and scheme-specific syntax are not defined by this specification. The URI format allows different schemes (e.g., `spiffe` as defined in {{SPIFFE-ID}}, `wimse`) depending on deployment requirements.  Example identifiers:
 
 ~~~
 spiffe://incubation.example.org/ns/experimental/analytics/ingest
 wimse://trust.corp.example.com/workload/af3e86cb-7013-4e33-b717-11c4edd25679
 ~~~
+
+A Workload Identifier URI MUST NOT contain a query component, a fragment component, user information, or a port component.
+
+Implementations that generate, parse, or otherwise process Workload Identifiers MUST support identifiers with a total length of at least 2048 bytes. Workload Identifiers SHOULD NOT exceed 2048 bytes in length.
+
+Individual Workload Identifier schemes MAY define additional syntax or processing requirements, provided they do not conflict with the requirements defined in this document.
 
 (Note that the wimse scheme is used as an example and is not defined in this document).
 
@@ -170,6 +178,16 @@ Workload Identifiers are designed to be embedded in cryptographic credentials an
 # Security Considerations
 
 The Workload Identifier is intended to be used as a stable, verifiable identity for workloads. Its use in cryptographic credentials means it must be protected against spoofing, ambiguity, and misinterpretation. This section outlines security considerations for issuers, consumers, and system designers.
+
+## URI Parsing and Processing Considerations
+
+Workload Identifiers are encoded as URIs and therefore rely on correct and secure URI parsing. Implementations MUST apply a standards-compliant URI parser.
+
+Incorrect URI parsing can result in misinterpretation of identifier components, security policy bypass, or inconsistent trust domain evaluation across implementations.
+
+Implementations MUST enforce the URI requirements defined in this document, including the absence of query, fragment, user information, and port components. Failure to validate these constraints may allow identifiers to carry unintended or ambiguous semantics.
+
+Implementations MUST also take care to handle Workload Identifiers of the maximum supported length without causing excessive memory allocation, resource exhaustion, or denial-of-service conditions. Parsers SHOULD impose reasonable internal limits and reject identifiers that exceed implementation-defined constraints, consistent with the length requirements in this document.
 
 ## Identifier Authenticity
 
